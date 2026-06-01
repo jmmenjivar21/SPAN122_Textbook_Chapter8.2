@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish 122 · Capítulo 8.2 · Semana 9 · Pretérito/Imperfecto · Fernando Llort · OD/OI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Space+Mono:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   CAPÍTULO 8.2 · SEMANA 9 · SPAN 122
+   Pretérito/Imperfecto · Fernando Llort · Pronombres OD/OI
+   ═══════════════════════════════════════════════════════════════ */
+
+:root{
+  --navy:#1B2E4F;
+  --navy-light:#2E4977;
+  --terracotta:#C45D3A;
+  --terracotta-light:#E0876A;
+  --gold:#D4A24C;
+  --gold-light:#EBC373;
+  --sage:#6E8C5F;
+  --sage-light:#9CB590;
+  --plum:#7A4E72;
+  --cream:#FBF7EE;
+  --cream-dark:#F0E9D8;
+  --text:#1a1a1a;
+  --text-light:#444;
+  --text-hint:#666;
+  --soft-shadow:0 4px 16px rgba(27,46,79,0.08);
+  --tile-shadow:0 2px 8px rgba(27,46,79,0.06);
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Source Sans 3','Helvetica Neue',Helvetica,Arial,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  line-height:1.55;
+  font-size:16px;
+  min-height:100vh;
+}
+
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--navy);color:#fff;padding:10px 16px;z-index:9999;text-decoration:none;}
+.skip-link:focus{left:8px;top:8px;}
+*:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px;}
+
+.app{max-width:1200px;margin:0 auto;padding:0 20px 64px;position:relative;}
+
+.app::before{
+  content:'8.2';
+  position:fixed;top:18px;right:24px;z-index:0;
+  font-family:'Playfair Display',serif;
+  font-size:9rem;font-weight:800;
+  color:var(--navy);opacity:0.04;
+  pointer-events:none;line-height:1;
+}
+
+/* Header */
+.chap-head{
+  margin-top:36px;padding:32px 36px;border-radius:18px;
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);
+  color:#fff;box-shadow:var(--soft-shadow);
+  position:relative;overflow:hidden;
+}
+.chap-head::after{
+  content:'';position:absolute;right:-40px;bottom:-40px;
+  width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(212,162,76,0.25),transparent 70%);
+}
+.header-badge{
+  display:inline-block;font-family:'Space Mono',monospace;
+  font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;
+  background:rgba(212,162,76,0.22);color:var(--gold-light);
+  padding:5px 12px;border-radius:20px;margin-bottom:10px;
+}
+.header-title{
+  display:block;font-family:'Playfair Display',serif;
+  font-size:2.2rem;font-weight:700;line-height:1.15;margin-bottom:6px;
+}
+.header-subtitle{
+  display:block;font-family:'Space Mono',monospace;
+  font-size:0.85rem;letter-spacing:0.1em;color:var(--gold-light);
+  text-transform:uppercase;
+}
+
+/* Progress bar */
+.prog-bar{height:6px;background:var(--cream-dark);border-radius:3px;margin:24px 0 22px;overflow:hidden;}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--terracotta),var(--gold));width:0%;transition:width 0.6s ease-out;}
+
+/* Tabs */
+.nav{display:flex;gap:4px;flex-wrap:wrap;background:#fff;padding:6px;border-radius:14px;box-shadow:var(--tile-shadow);margin-bottom:24px;}
+.tab{flex:1 1 auto;min-width:100px;padding:12px 14px;background:transparent;border:none;border-radius:10px;font-family:'Source Sans 3',sans-serif;font-size:0.92rem;font-weight:600;color:var(--text-light);cursor:pointer;transition:all 0.18s ease;min-height:44px;}
+.tab:hover{background:var(--cream-dark);color:var(--navy);}
+.tab.active{background:var(--navy);color:#fff;box-shadow:0 2px 6px rgba(27,46,79,0.25);}
+
+/* Sections */
+.sec{display:none;animation:fadein 0.3s ease;}
+.sec.active{display:block;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+
+.sec-title{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.sec-sub{font-family:'Space Mono',monospace;font-size:0.78rem;letter-spacing:0.12em;color:var(--terracotta);text-transform:uppercase;margin-bottom:22px;}
+
+/* Hero */
+.week-hero{background:#fff;padding:26px 30px;border-radius:14px;margin-bottom:24px;box-shadow:var(--tile-shadow);border-left:5px solid var(--terracotta);}
+.week-hero h1{font-family:'Playfair Display',serif;font-size:1.55rem;color:var(--navy);margin-bottom:8px;}
+.week-hero p{font-size:0.97rem;color:var(--text-light);margin-bottom:14px;}
+.topic-chips{display:flex;flex-wrap:wrap;gap:7px;}
+.chip{display:inline-block;padding:5px 11px;background:var(--cream-dark);color:var(--navy);border-radius:14px;font-size:0.78rem;font-weight:600;font-family:'Space Mono',monospace;letter-spacing:0.02em;}
+
+/* Cards */
+.card{background:#fff;padding:22px 26px;border-radius:14px;margin-bottom:18px;box-shadow:var(--tile-shadow);}
+.card-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.card-title .pill{font-family:'Space Mono',monospace;font-size:0.65rem;background:var(--gold);color:#fff;padding:3px 9px;border-radius:12px;letter-spacing:0.1em;}
+
+/* Schedule */
+.schedule{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--tile-shadow);margin-bottom:18px;}
+.sched-row{display:grid;grid-template-columns:120px 100px 1fr 1fr;gap:1px;background:var(--cream-dark);}
+.sched-row.head{background:var(--navy);}
+.sched-row.head .sched-cell{color:#fff;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;padding:11px 14px;}
+.sched-cell{background:#fff;padding:14px 16px;font-size:0.9rem;color:var(--text);}
+.sched-cell.day{font-family:'Playfair Display',serif;font-weight:700;color:var(--terracotta);font-size:1.0rem;background:var(--cream);}
+.sched-cell strong{color:var(--navy);}
+@media(max-width:760px){
+  .sched-row{grid-template-columns:1fr;}
+  .sched-row.head{display:none;}
+  .sched-cell{padding:8px 14px;}
+  .sched-cell.day{padding-top:14px;border-top:2px solid var(--terracotta);}
+}
+
+/* Resource cards */
+.res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;}
+.res-card{background:#fff;padding:16px 18px;border-radius:12px;border-top:3px solid var(--gold);box-shadow:var(--tile-shadow);}
+.res-card-day{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--terracotta);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.res-card-topic{font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:1.02rem;margin-bottom:10px;}
+.res-card a{display:block;font-size:0.84rem;color:var(--navy-light);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--cream-dark);word-break:break-all;}
+.res-card a:last-child{border-bottom:none;}
+.res-card a:hover{color:var(--terracotta);}
+.res-card a::before{content:'→ ';color:var(--gold);font-weight:700;}
+
+/* Grammar boxes */
+.gbox{background:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--tile-shadow);border-top:4px solid var(--terracotta);}
+.gbox.alt{border-top-color:var(--sage);}
+.gbox.alt2{border-top-color:var(--gold);}
+.gbox.alt3{border-top-color:var(--plum);}
+.gbox h3{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.gbox h3 .num{font-family:'Space Mono',monospace;font-size:0.7rem;background:var(--terracotta);color:#fff;padding:4px 10px;border-radius:11px;letter-spacing:0.1em;}
+.gbox.alt h3 .num{background:var(--sage);}
+.gbox.alt2 h3 .num{background:var(--gold);color:var(--navy);}
+.gbox.alt3 h3 .num{background:var(--plum);}
+.gbox .sub{font-size:0.9rem;color:var(--text-hint);margin-bottom:16px;font-style:italic;}
+
+/* Pronoun table */
+.conj-table{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(27,46,79,0.05);}
+.conj-table th,.conj-table td{padding:10px 14px;text-align:left;font-size:0.93rem;border-bottom:1px solid var(--cream-dark);vertical-align:top;}
+.conj-table th{background:var(--navy);color:#fff;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;}
+.conj-table td:first-child{font-weight:600;color:var(--navy);}
+.conj-table tr:last-child td{border-bottom:none;}
+.conj-table .accent{color:var(--terracotta);font-weight:700;}
+.conj-table .ex-text{font-style:italic;color:var(--text-light);}
+
+/* Stem/verb grids */
+.stem-group{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:9px;margin:12px 0;}
+.stem-cell{background:var(--cream);padding:12px 14px;border-radius:10px;border:2px solid var(--cream-dark);text-align:center;}
+.stem-cell .from{display:block;font-size:0.82rem;color:var(--text-hint);margin-bottom:3px;}
+.stem-cell .arrow{display:block;font-family:'Space Mono',monospace;color:var(--terracotta);font-size:0.9rem;margin-bottom:2px;}
+.stem-cell .to{display:block;font-family:'Playfair Display',serif;font-size:1.12rem;font-weight:700;color:var(--navy);}
+.stem-cell .note{display:block;font-size:0.72rem;color:var(--text-hint);font-style:italic;margin-top:2px;}
+
+/* Ser/Estar meaning table */
+.meaning-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:0.91rem;}
+.meaning-table th{background:var(--cream-dark);padding:9px 12px;text-align:left;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-hint);}
+.meaning-table td{padding:10px 12px;border-bottom:1px solid var(--cream-dark);vertical-align:top;}
+.meaning-table tr:last-child td{border-bottom:none;}
+.meaning-table td:first-child{font-weight:700;color:var(--navy);width:110px;}
+.ser-badge{display:inline-block;background:var(--navy);color:#fff;font-family:'Space Mono',monospace;font-size:0.64rem;padding:2px 7px;border-radius:8px;letter-spacing:0.06em;}
+.estar-badge{display:inline-block;background:var(--terracotta);color:#fff;font-family:'Space Mono',monospace;font-size:0.64rem;padding:2px 7px;border-radius:8px;letter-spacing:0.06em;}
+
+/* Narrative marker columns */
+.marker-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:14px 0;}
+.marker-col{border-radius:10px;padding:15px 16px;}
+.marker-col.begin{background:#EAF4EA;border-top:3px solid var(--sage);}
+.marker-col.cont{background:#E8EFF8;border-top:3px solid var(--navy-light);}
+.marker-col.turn{background:#FEF8EC;border-top:3px solid var(--gold);}
+.marker-col.end{background:#FCEEE9;border-top:3px solid var(--terracotta);}
+.marker-col h4{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;margin-bottom:8px;}
+.marker-col.begin h4{color:var(--sage);}
+.marker-col.cont h4{color:var(--navy-light);}
+.marker-col.turn h4{color:#A07A2D;}
+.marker-col.end h4{color:var(--terracotta);}
+.marker-col ul{list-style:none;font-size:0.88rem;line-height:1.85;}
+.marker-col ul li::before{content:'→ ';color:var(--text-hint);}
+
+/* OJO callout */
+.ojo{background:#FFF6F0;border-left:4px solid var(--terracotta);padding:14px 18px;border-radius:8px;margin:16px 0;}
+.ojo-title{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--terracotta);letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-bottom:6px;}
+.ojo p{font-size:0.92rem;color:var(--text);line-height:1.55;}
+.ojo em{color:var(--terracotta);font-style:italic;font-weight:600;}
+.ojo.sage{background:#F4F8F0;border-left-color:var(--sage);}
+.ojo.sage .ojo-title{color:var(--sage);}
+
+/* Example block */
+.ex-block{background:var(--cream);padding:12px 16px;border-radius:8px;border-left:3px solid var(--gold);font-style:italic;font-size:0.9rem;color:var(--text);margin:12px 0;line-height:1.6;}
+.ex-block strong{color:var(--navy);font-style:normal;}
+
+/* Objectives grid */
+.obj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+.obj{background:var(--cream);padding:14px 16px;border-radius:10px;border-left:3px solid var(--sage);display:flex;gap:11px;align-items:flex-start;}
+.obj-num{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.78rem;font-weight:700;}
+.obj-text{font-size:0.93rem;color:var(--text);line-height:1.45;}
+
+/* Exercise items */
+.ex-item{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px solid var(--cream-dark);font-size:0.97rem;flex-wrap:wrap;}
+.ex-item:last-of-type{border-bottom:none;}
+.ex-num{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--cream);color:var(--navy);display:inline-flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.78rem;font-weight:700;}
+.ex-text{flex:1;line-height:1.75;color:var(--text);}
+.ex-hint{font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--terracotta);margin-left:4px;}
+.blk{display:inline-block;width:140px;padding:6px 10px;border:2px solid var(--cream-dark);border-radius:6px;font-family:'Source Sans 3',sans-serif;font-size:0.95rem;color:var(--navy);background:#fff;outline:none;transition:border-color 0.15s;}
+.blk.wide{width:180px;}
+.blk.xwide{width:220px;}
+.blk.full{width:100%;max-width:400px;display:block;margin-top:6px;}
+.blk:focus{border-color:var(--gold);}
+.blk.ok{border-color:var(--sage);background:#F4F8F0;color:#3F5C32;}
+.blk.ng{border-color:var(--terracotta);background:#FFF0EA;color:#8E3A1F;}
+
+/* Buttons */
+.chk-btn,.rst-btn,.toggle-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border:none;border-radius:8px;font-family:'Source Sans 3',sans-serif;font-size:0.92rem;font-weight:700;cursor:pointer;transition:all 0.15s;min-height:42px;margin-top:14px;}
+.chk-btn{background:var(--navy);color:#fff;}
+.chk-btn:hover{background:var(--navy-light);}
+.rst-btn{background:#fff;color:var(--navy);border:2px solid var(--cream-dark);margin-left:6px;}
+.rst-btn:hover{border-color:var(--navy);}
+.toggle-btn{background:var(--gold);color:var(--navy);margin-left:6px;}
+.toggle-btn:hover{background:var(--gold-light);}
+.res-msg{margin-top:12px;font-size:0.93rem;font-weight:700;min-height:22px;}
+.res-msg.ok{color:#3F5C32;}
+.res-msg.ng{color:#8E3A1F;}
+
+/* Word bank */
+.word-bank{background:var(--cream);padding:11px 14px;border-radius:8px;margin-bottom:14px;font-size:0.88rem;}
+.word-bank-label{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);letter-spacing:0.1em;text-transform:uppercase;display:block;margin-bottom:4px;}
+.word-bank-words{color:var(--navy);font-weight:700;line-height:1.8;}
+.word-bank-words span{display:inline-block;background:#fff;padding:3px 9px;border-radius:11px;margin:2px 3px;font-size:0.84rem;border:1px solid var(--cream-dark);}
+
+/* Model answer box */
+.model-box{display:none;background:var(--cream);padding:14px 18px;border-radius:10px;margin-top:14px;border-left:4px solid var(--gold);}
+.model-box.show{display:block;animation:fadein 0.3s ease;}
+.model-box-title{font-family:'Space Mono',monospace;font-size:0.72rem;color:#A07A2D;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-bottom:8px;}
+.model-box ol,.model-box ul{padding-left:22px;}
+.model-box ol li,.model-box ul li{font-size:0.9rem;color:var(--text);padding:5px 0;line-height:1.5;}
+.model-box ol li em{color:var(--terracotta);font-style:italic;font-weight:600;}
+
+/* Vocabulary grid */
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:9px;margin-top:14px;}
+.vocab-item{background:var(--cream);padding:11px 14px;border-radius:9px;display:flex;gap:8px;align-items:baseline;border-bottom:2px solid transparent;}
+.vocab-item:hover{border-bottom-color:var(--gold);}
+.vocab-es{font-weight:700;color:var(--navy);font-size:0.95rem;}
+.vocab-en{font-size:0.82rem;color:var(--text-hint);}
+
+/* Cultural card */
+.cult-card{background:linear-gradient(135deg,#5A3E2B 0%,#8B5E3C 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:18px;box-shadow:var(--soft-shadow);}
+.cult-card .label{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px;}
+.cult-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:12px;color:#fff;}
+.cult-card p{font-size:0.95rem;line-height:1.65;color:rgba(255,255,255,0.95);}
+.cult-card p+p{margin-top:10px;}
+.cult-card .fact-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.cult-card .fact-pills span{background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:14px;font-size:0.82rem;font-weight:600;}
+
+.cult-card.surr{background:linear-gradient(135deg,var(--sage) 0%,#5A7350 100%);}
+.cult-card.llort{background:linear-gradient(135deg,#5A3E2B 0%,#8B5E3C 100%);}
+
+/* Quote */
+.quote-box{background:var(--cream-dark);border-left:4px solid var(--gold);padding:16px 20px;border-radius:8px;margin:16px 0;font-style:italic;font-size:1.0rem;color:var(--navy);}
+.quote-box cite{display:block;margin-top:6px;font-style:normal;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);}
+
+/* Free writing */
+.vl-script{width:100%;min-height:200px;border:2px solid var(--cream-dark);border-radius:10px;padding:14px 16px;font-family:'Source Sans 3',sans-serif;font-size:0.97rem;line-height:1.7;color:var(--text);background:#fff;outline:none;resize:vertical;}
+.vl-script:focus{border-color:var(--gold);}
+.free-label{display:block;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--terracotta);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+
+/* VideoLog checklist */
+.tip-list{margin-top:10px;}
+.tip-item{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--cream-dark);}
+.tip-item:last-child{border-bottom:none;}
+.tip-icon{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--gold);color:var(--navy);display:inline-flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:700;}
+.tip-item p{font-size:0.91rem;color:var(--text);line-height:1.5;}
+
+/* Clickable checklist */
+.cl-item{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--cream-dark);cursor:pointer;user-select:none;}
+.cl-item:last-child{border-bottom:none;}
+.cl-box{flex-shrink:0;width:22px;height:22px;border-radius:5px;border:2px solid var(--cream-dark);background:#fff;display:flex;align-items:center;justify-content:center;transition:all .15s;margin-top:1px;}
+.cl-item.checked .cl-box{background:var(--sage);border-color:var(--sage);}
+.cl-item.checked .cl-box::after{content:'✓';color:#fff;font-size:0.78rem;font-weight:700;}
+.cl-item p{font-size:0.91rem;color:var(--text);line-height:1.5;}
+
+/* Step badge */
+.step-badge{display:inline-flex;align-items:center;gap:8px;background:var(--plum);color:#fff;padding:6px 12px;border-radius:14px;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;margin-bottom:14px;}
+
+/* Story ordering drag */
+.sort-item{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:#fff;border:1px solid var(--cream-dark);border-radius:9px;margin-bottom:8px;cursor:grab;font-size:0.92rem;line-height:1.5;}
+.sort-item:active{cursor:grabbing;}
+.sort-handle{color:var(--text-hint);font-size:1.1rem;flex-shrink:0;margin-top:1px;}
+.sort-item.sort-ok{background:#F4F8F0;border-color:var(--sage);}
+.sort-item.sort-ng{background:#FFF0EA;border-color:var(--terracotta);}
+
+/* Surrealism artists */
+.artist-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:16px;}
+.artist-card{background:#fff;padding:18px 20px;border-radius:12px;border-top:3px solid var(--plum);box-shadow:var(--tile-shadow);}
+.artist-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--navy);}
+.artist-dates{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);margin-bottom:9px;}
+.artist-card p{font-size:0.88rem;color:var(--text-light);line-height:1.5;}
+
+/* Footer */
+.footer{margin-top:36px;padding:20px;text-align:center;font-family:'Space Mono',monospace;font-size:0.76rem;color:var(--text-hint);letter-spacing:0.05em;}
+
+@media(max-width:600px){
+  .chap-head{padding:24px 22px;}
+  .header-title{font-size:1.7rem;}
+  .gbox,.card,.cult-card{padding:18px 20px;}
+  .ex-item{flex-wrap:wrap;}
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="chap-head">
+    <span class="header-badge">SPSCC · ESP 122</span>
+    <span class="header-title">Capítulo 8.2 — Fernando Llort & Narración</span>
+    <span class="header-subtitle">Semana 9 · Week 9</span>
+  </div>
+
+  <div class="prog-bar"><div class="prog-fill" id="pf"></div></div>
+
+  <nav class="nav" aria-label="Course sections">
+    <button class="tab active" onclick="switchTab('ov',this)">Inicio</button>
+    <button class="tab" onclick="switchTab('cu',this)">Cultura</button>
+    <button class="tab" onclick="switchTab('gr',this)">Gramática</button>
+    <button class="tab" onclick="switchTab('ej',this)">Ejercicios</button>
+    <button class="tab" onclick="switchTab('vl',this)">Video Log 8</button>
+    <button class="tab" onclick="switchTab('su',this)">Surrealismo</button>
+  </nav>
+
+  <div id="main-content"></div>
+
+  <!-- ═══ INICIO ═══ -->
+  <section class="sec active" id="sec-ov">
+    <h2 class="sec-title">Semana 9 · Pretérito, Narración & Pronombres</h2>
+    <p class="sec-sub">Preterite/Imperfect Contrast · Fernando Llort · OD/OI · Final VideoLog</p>
+
+    <div class="week-hero">
+      <h1>This Week: Tell Stories, Use Pronouns & Record Your Final VideoLog</h1>
+      <p>Week 9 closes Chapter 8 by bringing together <strong>irregular preterite verbs</strong>, the <strong>preterite/imperfect contrast</strong>, <strong>direct and indirect object pronouns</strong>, and <strong>narrative structure</strong>. The cultural focus is <strong>Fernando Llort</strong>, El Salvador's most iconic artist. The week culminates in <strong>Video Log 8</strong> — a story narrated from a visual artwork.</p>
+      <div class="topic-chips">
+        <span class="chip">pretérito irregular</span>
+        <span class="chip">pretérito vs. imperfecto</span>
+        <span class="chip">OD / OI pronouns</span>
+        <span class="chip">doble pronombre</span>
+        <span class="chip">ser vs. estar + emociones</span>
+        <span class="chip">marcadores narrativos</span>
+        <span class="chip">Fernando Llort · El Salvador</span>
+        <span class="chip">Video Log 8</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Learning Objectives <span class="pill">6 GOALS</span></div>
+      <div class="obj-grid">
+        <div class="obj"><span class="obj-num">1</span><span class="obj-text">Use irregular preterite verbs in the <em>u-stem</em> (estar, tener, poder, poner, saber) and <em>i-stem</em> groups (querer, venir, hacer, decir, traer).</span></div>
+        <div class="obj"><span class="obj-num">2</span><span class="obj-text">Apply the preterite/imperfect contrast correctly: imperfect for scene-setting and background; preterite for completed events.</span></div>
+        <div class="obj"><span class="obj-num">3</span><span class="obj-text">Identify and use direct object pronouns (OD) and indirect object pronouns (OI), and combine both in double-pronoun constructions.</span></div>
+        <div class="obj"><span class="obj-num">4</span><span class="obj-text">Distinguish <em>ser</em> vs. <em>estar</em> with meaning-changing adjectives like <em>aburrido, listo, malo, rico, muerto</em>.</span></div>
+        <div class="obj"><span class="obj-num">5</span><span class="obj-text">Use narrative markers (<em>primero, luego, de repente, al final</em>) to structure a coherent story.</span></div>
+        <div class="obj"><span class="obj-num">6</span><span class="obj-text">Record Video Log 8: a 3–4 minute story narrated from a painting or photograph from the Spanish-speaking world.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Weekly Schedule <span class="pill">HORARIO</span></div>
+      <div class="schedule">
+        <div class="sched-row head">
+          <div class="sched-cell">Day</div>
+          <div class="sched-cell">Type</div>
+          <div class="sched-cell">Focus &amp; Activities</div>
+          <div class="sched-cell">Homework</div>
+        </div>
+        <div class="sched-row">
+          <div class="sched-cell day">Monday</div>
+          <div class="sched-cell">Self-Guided</div>
+          <div class="sched-cell"><strong>Grammar 4 — Ser vs. Estar Deep Dive:</strong> Re-read Grammar 4 (ser/estar with feelings); complete Ejercicio 6; write 8 contrast sentences using same adjective with both verbs</div>
+          <div class="sched-cell">Ejercicio 6 due Tuesday; study ser/estar with emotion adjectives</div>
+        </div>
+        <div class="sched-row">
+          <div class="sched-cell day">Tuesday</div>
+          <div class="sched-cell">In-Class</div>
+          <div class="sched-cell"><strong>Fernando Llort + OD/OI Pronouns:</strong> Grammar review — preterite/imperfect with feelings; Ejercicio 7; read & analyze narrative text; group story-building activity</div>
+          <div class="sched-cell">Complete story draft for Video Log 8; peer review checklist</div>
+        </div>
+        <div class="sched-row">
+          <div class="sched-cell day">Wednesday</div>
+          <div class="sched-cell">Practice</div>
+          <div class="sched-cell"><strong>Video Log 8 Workshop:</strong> Full draft peer review; grammar correction; revision time; individual recording planning</div>
+          <div class="sched-cell">Record Video Log 8; upload before Thursday class</div>
+        </div>
+        <div class="sched-row">
+          <div class="sched-cell day">Thursday</div>
+          <div class="sched-cell">In-Class</div>
+          <div class="sched-cell"><strong>Video Log 8 + Chapter 8 Wrap-Up:</strong> Submit Video Log 8; oral story presentations from painting/image; Mexico &amp; Surrealism cultural note; Chapter 8 wrap-up; preview final exam format</div>
+          <div class="sched-cell">Study all 4 chapters for Week 10 comprehensive review</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Online Resources <span class="pill">VIDEOS · PRÁCTICA</span></div>
+      <div class="res-grid">
+        <div class="res-card">
+          <div class="res-card-day">Monday</div>
+          <div class="res-card-topic">Ser vs. Estar — Emociones</div>
+          <a href="https://www.youtube.com/@ButterflySpanish/search?query=ser+estar+emotions+feelings" target="_blank" rel="noopener">Video: Ser vs. Estar with Feelings — Butterfly Spanish</a>
+          <a href="https://www.spanishdict.com/guide/ser-vs-estar" target="_blank" rel="noopener">Practice: Ser vs. Estar Guide — SpanishDict</a>
+        </div>
+        <div class="res-card">
+          <div class="res-card-day">Tuesday</div>
+          <div class="res-card-topic">Pretérito/Imperfecto + Narración</div>
+          <a href="https://www.youtube.com/@spanishpod101/search?query=preterite+imperfect+story+narration" target="_blank" rel="noopener">Video: Preterite vs. Imperfect Story — SpanishPod101</a>
+          <a href="https://conjuguemos.com/verb/2035489" target="_blank" rel="noopener">Practice: Mixed Exercises — Conjuguemos</a>
+        </div>
+        <div class="res-card">
+          <div class="res-card-day">Wednesday</div>
+          <div class="res-card-topic">Storytelling Workshop</div>
+          <a href="https://www.youtube.com/@DreamingSpanish/search?query=telling+a+story+Spanish+narrative" target="_blank" rel="noopener">Video: How to Tell a Story — Dreaming Spanish</a>
+          <a href="https://quizlet.com/800395206/spanish-common-storytellingtransition-words-flash-cards/" target="_blank" rel="noopener">Practice: Narrative Markers — Quizlet</a>
+        </div>
+        <div class="res-card">
+          <div class="res-card-day">Thursday</div>
+          <div class="res-card-topic">Arte + Surrealismo Mexicano</div>
+          <a href="https://www.youtube.com/results?search_query=frida+kahlo+surrealismo+mexicano+espanol" target="_blank" rel="noopener">Video: Frida Kahlo y el Surrealismo</a>
+          <a href="https://www.spanishdict.com/guide" target="_blank" rel="noopener">Practice: Grammar Review — SpanishDict</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CULTURA ═══ -->
+  <section class="sec" id="sec-cu">
+    <h2 class="sec-title">Cápsula Cultural · Fernando Llort</h2>
+    <p class="sec-sub">El alma artística de El Salvador · Pronombres de OD/OI</p>
+
+    <div class="cult-card llort">
+      <div class="label">Cápsula Cultural · Capítulo 8.2 · El Salvador</div>
+      <h3>Fernando Llort — La Semilla de un Sueño</h3>
+      <p>En 1972, un joven artista salvadoreño llamado Fernando Llort (1949–2018) tomó una decisión que cambiaría el rostro cultural de su país. Dejó la capital, San Salvador, y se mudó a La Palma, un pueblo pequeño en las montañas de Chalatenango. Allí, mientras caminaba por las calles, vio a un niño que frotaba una semilla de copinol contra el suelo. Cuando la semilla se abría, mostraba una superficie blanca enmarcada por un borde marrón. <em>"Es un cuadro enmarcado,"</em> pensó. Esa semilla le inspiró una visión entera.</p>
+      <p>Con esa idea, Llort fundó el taller <strong>La Semilla de Dios</strong>. Allí les enseñó a los habitantes a dibujar, pintar y crear artesanías. Les dio herramientas, les compartió su estilo y, poco a poco, transformó al pueblo. Hoy La Palma tiene más de 130 talleres, y miles de familias viven del arte que Llort sembró en ellas.</p>
+      <p>Su estilo es inconfundible: figuras geométricas, contornos negros gruesos, colores intensos —turquesas, rojos, amarillos, cobaltos— y motivos de casitas, palomas, soles, montañas e iglesias. Es un arte <em>naíf (ingenuo)</em> con influencias del cubismo.</p>
+      <div class="fact-pills">
+        <span>1949–2018</span>
+        <span>La Palma, Chalatenango</span>
+        <span>Arte naíf / cubismo</span>
+        <span>La Semilla de Dios</span>
+        <span>+130 talleres</span>
+        <span>Arte de esperanza</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">¿Sabías qué…? <span class="pill">DATOS</span></div>
+      <div class="obj-grid">
+        <div class="obj"><span class="obj-num" style="background:var(--terracotta);">1</span><span class="obj-text">Llort's unmistakable style features <strong>bold black outlines</strong>, intense turquoise, red, yellow, and cobalt colors, with motifs of doves, suns, mountains, and village chapels.</span></div>
+        <div class="obj"><span class="obj-num" style="background:var(--gold);color:var(--navy);">2</span><span class="obj-text">Though he lived through El Salvador's <strong>civil war</strong>, Llort deliberately avoided political commentary — he wanted to give his people an image of <em>esperanza</em> (hope).</span></div>
+        <div class="obj"><span class="obj-num" style="background:var(--sage);">3</span><span class="obj-text">Today his aesthetic appears at the international <strong>airport</strong>, in museums, on ceramics, t-shirts, and murals — it is recognized as quintessentially Salvadoran.</span></div>
+        <div class="obj"><span class="obj-num">4</span><span class="obj-text">Llort taught his art style freely to the local community, enabling thousands of families to earn income through craft — he <em>sembró</em> (planted) art as a livelihood.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Vocabulario Clave <span class="pill">VOCAB</span></div>
+      <div class="vocab-grid">
+        <div class="vocab-item"><span class="vocab-es">la semilla</span><span class="vocab-en">seed</span></div>
+        <div class="vocab-item"><span class="vocab-es">el taller</span><span class="vocab-en">workshop, studio</span></div>
+        <div class="vocab-item"><span class="vocab-es">enmarcado/a</span><span class="vocab-en">framed</span></div>
+        <div class="vocab-item"><span class="vocab-es">el contorno</span><span class="vocab-en">outline</span></div>
+        <div class="vocab-item"><span class="vocab-es">la artesanía</span><span class="vocab-en">handicraft, craft</span></div>
+        <div class="vocab-item"><span class="vocab-es">sembrar</span><span class="vocab-en">to sow, to plant</span></div>
+        <div class="vocab-item"><span class="vocab-es">la paloma</span><span class="vocab-en">dove</span></div>
+        <div class="vocab-item"><span class="vocab-es">el cuadro</span><span class="vocab-en">painting; picture</span></div>
+        <div class="vocab-item"><span class="vocab-es">ingenuo / naíf</span><span class="vocab-en">naive (art style)</span></div>
+        <div class="vocab-item"><span class="vocab-es">inconfundible</span><span class="vocab-en">unmistakable</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Reflexión Cultural <span class="pill">PARA ESCRIBIR</span></div>
+      <div class="quote-box">
+        "Quise reconectar con nuestras raíces como latinoamericanos, y ayudar a definir a nuestro pueblo en su dimensión humana y espiritual."
+        <cite>— Fernando Llort</cite>
+      </div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:12px;">Cuando un artista crea una obra que termina perteneciéndole a todo un país, ¿de quién es esa obra realmente? ¿Del artista, del pueblo que la adoptó, o de los dos? Escribe 4–5 oraciones sobre Llort y El Salvador. <strong>Usa por lo menos tres pronombres</strong> de objeto directo o indirecto (subráyalos).</p>
+      <label class="free-label">Tu respuesta:</label>
+      <textarea class="vl-script" style="min-height:130px;" placeholder="Escribe tu reflexión aquí... Recuerda subrayar tus pronombres OD/OI."></textarea>
+    </div>
+  </section>
+
+  <!-- ═══ GRAMÁTICA ═══ -->
+  <section class="sec" id="sec-gr">
+    <h2 class="sec-title">Gramática · Cuatro temas</h2>
+    <p class="sec-sub">OD/OI pronouns · irregular preterite · ser vs. estar · narrative markers</p>
+
+    <!-- G1: OD/OI Pronouns -->
+    <div class="gbox">
+      <h3><span class="num">G1</span>Pronombres de Objeto Directo e Indirecto</h3>
+      <p class="sub">OD answers ¿qué? or ¿a quién? — the thing/person directly affected. OI answers ¿a quién? or ¿para quién? — the recipient of the action.</p>
+
+      <table class="conj-table">
+        <thead><tr><th>Person</th><th>Pronombre OD</th><th>Pronombre OI</th></tr></thead>
+        <tbody>
+          <tr><td>yo</td><td>me</td><td>me</td></tr>
+          <tr><td>tú</td><td>te</td><td>te</td></tr>
+          <tr><td>él / ella / Ud.</td><td>lo, la</td><td>le</td></tr>
+          <tr><td>nosotros/as</td><td>nos</td><td>nos</td></tr>
+          <tr><td>vosotros/as</td><td>os</td><td>os</td></tr>
+          <tr><td>ellos/as / Uds.</td><td>los, las</td><td>les</td></tr>
+        </tbody>
+      </table>
+
+      <div class="ojo">
+        <div class="ojo-title">¡OJO! · Doble pronombre · le/les → se</div>
+        <p>When combining both pronouns, <strong>OI always comes first</strong>. When <em>le</em> or <em>les</em> comes before <em>lo/la/los/las</em>, it changes to <strong>se</strong>.<br>
+        <em>Llort regaló su estilo al pueblo. → Llort <strong>se lo</strong> regaló.</em></p>
+      </div>
+
+      <div class="ex-block">
+        <strong>OD example:</strong> Su estética: <strong>la</strong> conocemos, <strong>la</strong> reconocemos. (¿Qué? → su estética)<br>
+        <strong>OI example:</strong> Llort <strong>les</strong> dio herramientas a los habitantes. (¿A quiénes? → a los habitantes)<br>
+        <strong>Double:</strong> Llort regaló su estilo al pueblo. → Llort <strong>se lo</strong> regaló. (le + lo → se lo)
+      </div>
+    </div>
+
+    <!-- G2: Irregular Preterite -->
+    <div class="gbox alt">
+      <h3><span class="num">G2</span>Irregular Preterite: U-stem &amp; I-stem Groups</h3>
+      <p class="sub">These verbs have completely irregular stems in the preterite — memorize them as groups by pattern.</p>
+
+      <p style="font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:9px;">U-Stem Group · endings: -uve / -uviste / -uvo / -uvimos / -uvieron</p>
+      <div class="stem-group">
+        <div class="stem-cell"><span class="from">estar</span><span class="arrow">→</span><span class="to">estuve</span></div>
+        <div class="stem-cell"><span class="from">tener</span><span class="arrow">→</span><span class="to">tuve</span></div>
+        <div class="stem-cell"><span class="from">poder</span><span class="arrow">→</span><span class="to">pude</span></div>
+        <div class="stem-cell"><span class="from">poner</span><span class="arrow">→</span><span class="to">puse</span></div>
+        <div class="stem-cell"><span class="from">saber</span><span class="arrow">→</span><span class="to">supe</span></div>
+      </div>
+
+      <p style="font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);text-transform:uppercase;letter-spacing:0.08em;margin-top:16px;margin-bottom:9px;">I-Stem Group</p>
+      <div class="stem-group">
+        <div class="stem-cell"><span class="from">querer</span><span class="arrow">→</span><span class="to">quise</span></div>
+        <div class="stem-cell"><span class="from">venir</span><span class="arrow">→</span><span class="to">vine</span></div>
+        <div class="stem-cell" style="border-color:var(--gold);"><span class="from">hacer ⚠️</span><span class="arrow">→</span><span class="to">hice</span><span class="note">not -ise!</span></div>
+      </div>
+
+      <p style="font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);text-transform:uppercase;letter-spacing:0.08em;margin-top:16px;margin-bottom:9px;">J-Stem Group · -eron (NOT -ieron!)</p>
+      <div class="stem-group">
+        <div class="stem-cell"><span class="from">decir</span><span class="arrow">→</span><span class="to">dije</span><span class="note">dijeron</span></div>
+        <div class="stem-cell"><span class="from">traer</span><span class="arrow">→</span><span class="to">traje</span><span class="note">trajeron</span></div>
+        <div class="stem-cell"><span class="from">producir</span><span class="arrow">→</span><span class="to">produje</span></div>
+      </div>
+
+      <div class="ex-block">
+        No <strong>pude</strong> dormir porque <strong>estuve</strong> pensando en el examen.<br>
+        ¿Qué te <strong>dijo</strong> cuando <strong>supo</strong> la noticia? — Le <strong>dije</strong> que me alegraba mucho.
+      </div>
+    </div>
+
+    <!-- G3: Ser vs Estar -->
+    <div class="gbox alt2">
+      <h3><span class="num">G3</span>Ser vs. Estar — Advanced Contrast with Emotions</h3>
+      <p class="sub">Many adjectives change meaning entirely depending on which verb is used. Context is everything!</p>
+
+      <table class="meaning-table">
+        <thead>
+          <tr>
+            <th>Adjective</th>
+            <th><span class="ser-badge">SER</span> · identity / permanent trait</th>
+            <th><span class="estar-badge">ESTAR</span> · condition / current state</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>aburrido/a</td><td><em>Es aburrido.</em> — He is boring (trait)</td><td><em>Está aburrido.</em> — He is bored (right now)</td></tr>
+          <tr><td>listo/a</td><td><em>Es lista.</em> — She is clever/smart</td><td><em>Está lista.</em> — She is ready</td></tr>
+          <tr><td>malo/a</td><td><em>Es malo.</em> — He is bad/evil</td><td><em>Está malo.</em> — He is sick/unwell</td></tr>
+          <tr><td>rico/a</td><td><em>Es rica.</em> — She is wealthy</td><td><em>Está rica.</em> — It is delicious</td></tr>
+          <tr><td>muerto/a</td><td><em>Es un hombre muerto.</em> — classification</td><td><em>Está muerto.</em> — He is dead (state)</td></tr>
+        </tbody>
+      </table>
+
+      <div class="ojo">
+        <div class="ojo-title">La regla de oro</div>
+        <p><strong>Ser</strong> = identity, origin, permanent characteristics &nbsp;·&nbsp; <strong>Estar</strong> = location, condition, current state, emotions</p>
+      </div>
+    </div>
+
+    <!-- G4: Narrative Markers -->
+    <div class="gbox alt3">
+      <h3><span class="num">G4</span>Marcadores Narrativos / Narrative Markers</h3>
+      <p class="sub">Use these to organize and connect your story — essential for Video Log 8!</p>
+
+      <div class="marker-cols">
+        <div class="marker-col begin">
+          <h4>To Begin</h4>
+          <ul><li>Había una vez…</li><li>Un día…</li><li>Hace mucho tiempo…</li><li>Primero…</li></ul>
+        </div>
+        <div class="marker-col cont">
+          <h4>To Continue</h4>
+          <ul><li>Luego…</li><li>Después…</li><li>Más tarde…</li><li>En ese momento…</li></ul>
+        </div>
+        <div class="marker-col turn">
+          <h4>Sudden Turn</h4>
+          <ul><li>De repente…</li><li>De pronto…</li><li>Inesperadamente…</li></ul>
+        </div>
+        <div class="marker-col end">
+          <h4>To Conclude</h4>
+          <ul><li>Al final…</li><li>Por último…</li><li>Finalmente…</li><li>En conclusión…</li></ul>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <strong>Story example:</strong><br>
+        <em>Primero</em>, la mujer caminaba sola por el bosque. <em>De repente</em>, escuchó un ruido extraño. <em>Luego</em>, se dio cuenta de que no estaba sola. <em>Al final</em>, resultó ser solo su vecina buscando a su perro.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EJERCICIOS ═══ -->
+  <section class="sec" id="sec-ej">
+    <h2 class="sec-title">Ejercicios · Práctica</h2>
+    <p class="sec-sub">Ejercicio 4 · 5 · 6 · 7 · 8</p>
+
+    <!-- Ejercicio 4: Double Object -->
+    <div class="card">
+      <div class="card-title">Ejercicio 4 · Doble Objeto — Replace Both Objects <span class="pill">OD + OI</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Replace both the direct and indirect object with the correct pronouns. Remember: <em>le/les → se</em> before <em>lo/la/los/las</em>!</p>
+      <div class="word-bank">
+        <span class="word-bank-label">Rule reminder</span>
+        <span class="word-bank-words">
+          <span>OI always first</span><span>le + lo/la → se lo/la</span><span>les + los/las → se los/las</span>
+        </span>
+      </div>
+      <p style="font-size:0.87rem;font-style:italic;color:var(--text-hint);margin-bottom:10px;">Example: Yo le di el libro a mi amigo. → Yo <strong>se lo</strong> di.</p>
+
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Ella le mandó las fotos a su madre. → Ella <input class="blk wide" id="q4_1" data-answer="se las mandó" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Él me prestó su bicicleta. → Él <input class="blk wide" id="q4_2" data-answer="me la prestó" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Les expliqué el ejercicio a los estudiantes. → <input class="blk wide" id="q4_3" data-answer="se lo expliqué" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">¿Me puedes traer el menú? → ¿<input class="blk wide" id="q4_4" data-answer="me lo puedes traer" placeholder="___">?</span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Te voy a mostrar las fotos del viaje. → Te <input class="blk wide" id="q4_5" data-answer="las voy a mostrar" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Nos regalaron unas entradas para el teatro. → <input class="blk wide" id="q4_6" data-answer="nos las regalaron" placeholder="___"> para el teatro.</span></div>
+
+      <button class="chk-btn" onclick="checkBlanks('q4_1,q4_2,q4_3,q4_4,q4_5,q4_6','rs4')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('q4_1,q4_2,q4_3,q4_4,q4_5,q4_6','rs4')">Reset</button>
+      <button class="toggle-btn" onclick="toggleModel('model4')">📋 Show answers</button>
+      <div class="res-msg" id="rs4" aria-live="polite"></div>
+      <div class="model-box" id="model4">
+        <div class="model-box-title">Correct answers</div>
+        <ol>
+          <li><em>se las mandó</em></li>
+          <li><em>me la prestó</em></li>
+          <li><em>se lo expliqué</em></li>
+          <li><em>me lo puedes traer</em></li>
+          <li><em>las voy a mostrar</em></li>
+          <li><em>nos las regalaron</em></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ejercicio 5: Irregular Preterite -->
+    <div class="card">
+      <div class="card-title">Ejercicio 5 · Pretérito Irregular (grupos u/i) <span class="pill">FILL IN</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Complete with the correct irregular preterite form. Pay attention to the person indicated!</p>
+
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Ayer yo no <input class="blk" id="q5_1" data-answer="pude" placeholder="(poder)"> dormir — estaba demasiado nervioso/a.</span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">¿Qué <input class="blk" id="q5_2" data-answer="dijiste" placeholder="(decir, tú)"> cuando supiste la noticia?</span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Ella <input class="blk" id="q5_3" data-answer="tuvo" placeholder="(tener)"> que trabajar toda la noche para terminar el proyecto.</span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Nosotros <input class="blk" id="q5_4" data-answer="estuvimos" placeholder="(estar)"> en la fiesta hasta las dos de la mañana.</span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">¿Quién <input class="blk" id="q5_5" data-answer="trajo" placeholder="(traer)"> el pastel a la celebración?</span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Yo <input class="blk" id="q5_6" data-answer="supe" placeholder="(saber)"> la verdad cuando ya era demasiado tarde.</span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">Ellos no <input class="blk" id="q5_7" data-answer="quisieron" placeholder="(querer)"> venir a la reunión — estaban muy ocupados.</span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">¿Dónde <input class="blk" id="q5_8" data-answer="pusiste" placeholder="(poner, tú)"> mis llaves? ¡No las encuentro!</span></div>
+
+      <button class="chk-btn" onclick="checkBlanks('q5_1,q5_2,q5_3,q5_4,q5_5,q5_6,q5_7,q5_8','rs5')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('q5_1,q5_2,q5_3,q5_4,q5_5,q5_6,q5_7,q5_8','rs5')">Reset</button>
+      <button class="toggle-btn" onclick="toggleModel('model5')">📋 Show answers</button>
+      <div class="res-msg" id="rs5" aria-live="polite"></div>
+      <div class="model-box" id="model5">
+        <div class="model-box-title">Correct answers</div>
+        <ol><li><em>pude</em></li><li><em>dijiste</em></li><li><em>tuvo</em></li><li><em>estuvimos</em></li><li><em>trajo</em></li><li><em>supe</em></li><li><em>quisieron</em></li><li><em>pusiste</em></li></ol>
+      </div>
+    </div>
+
+    <!-- Ejercicio 6: Ser vs Estar -->
+    <div class="card">
+      <div class="card-title">Ejercicio 6 · Ser vs. Estar — Meaning Contrast <span class="pill">CHOOSE</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Fill in with the correct form of <em>ser</em> or <em>estar</em>. The English clue tells you which meaning is needed.</p>
+
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Esta sopa <input class="blk" id="q6_1" data-answer="está" placeholder="ser/estar"> riquísima. <span class="ex-hint">(delicious right now)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Mi jefe <input class="blk" id="q6_2" data-answer="es" placeholder="ser/estar"> muy aburrido en las reuniones. <span class="ex-hint">(boring — trait)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Ella no pudo venir — <input class="blk" id="q6_3" data-answer="estaba" placeholder="ser/estar"> enferma. <span class="ex-hint">(sick — current)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">El chico <input class="blk" id="q6_4" data-answer="es" placeholder="ser/estar"> muy malo con sus compañeros. <span class="ex-hint">(mean — trait)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">¿Ya <input class="blk" id="q6_5" data-answer="estás" placeholder="ser/estar"> lista para salir? Llegamos tarde. <span class="ex-hint">(ready — right now)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Mi abuelo <input class="blk" id="q6_6" data-answer="está" placeholder="ser/estar"> muerto desde hace cinco años. <span class="ex-hint">(dead — state)</span></span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">El actor <input class="blk" id="q6_7" data-answer="estuvo" placeholder="ser/estar"> muy bueno en esa película. <span class="ex-hint">(good/skilled — performance)</span></span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">¿Cómo <input class="blk" id="q6_8" data-answer="estás" placeholder="ser/estar"> hoy? — <input class="blk" id="q6_9" data-answer="estoy" placeholder="ser/estar"> un poco cansado/a.</span></div>
+
+      <button class="chk-btn" onclick="checkBlanks('q6_1,q6_2,q6_3,q6_4,q6_5,q6_6,q6_7,q6_8,q6_9','rs6')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('q6_1,q6_2,q6_3,q6_4,q6_5,q6_6,q6_7,q6_8,q6_9','rs6')">Reset</button>
+      <div class="res-msg" id="rs6" aria-live="polite"></div>
+    </div>
+
+    <!-- Ejercicio 7: Full Story -->
+    <div class="card">
+      <div class="card-title">Ejercicio 7 · Pretérito vs. Imperfecto — Full Story <span class="pill">CONTRAST</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Choose the correct tense for each blank. Ask yourself: is this <strong>background/description</strong> (imperfect) or a <strong>completed event</strong> (preterite)?</p>
+
+      <p style="font-size:0.97rem;line-height:2.4;color:var(--text);">
+        Ayer <input class="blk" id="q7_1" data-answer="fue" placeholder="(ser)"> un día especial. Yo <input class="blk" id="q7_2" data-answer="caminaba" placeholder="(caminar)"> por el parque cuando de repente <input class="blk" id="q7_3" data-answer="vi" placeholder="(ver)"> a una persona que <input class="blk" id="q7_4" data-answer="conocía" placeholder="(conocer)"> de la escuela primaria. <input class="blk" id="q7_5" data-answer="Llevaba" placeholder="(llevar)"> el mismo sombrero verde que <input class="blk" id="q7_6" data-answer="usaba" placeholder="(usar)"> siempre de niño/a. Me <input class="blk" id="q7_7" data-answer="alegré" placeholder="(alegrar)"> muchísimo verlo/a. <input class="blk wide" id="q7_8" data-answer="Se llamaba" placeholder="(llamarse)"> Marco/Valentina, y <input class="blk" id="q7_9" data-answer="era" placeholder="(ser)"> muy simpático/a. Nosotros <input class="blk" id="q7_10" data-answer="hablamos" placeholder="(hablar)"> durante casi una hora sobre nuestras vidas. Él/Ella me <input class="blk" id="q7_11" data-answer="contó" placeholder="(contar)"> que ya no <input class="blk" id="q7_12" data-answer="vivía" placeholder="(vivir)"> en nuestra ciudad — <input class="blk wide" id="q7_13" data-answer="se había mudado" placeholder="(mudarse)"> a otra región hace tres años. Al final, nos <input class="blk" id="q7_14" data-answer="despedimos" placeholder="(despedir)"> con la promesa de reunirnos pronto.
+      </p>
+
+      <button class="chk-btn" onclick="checkBlanks('q7_1,q7_2,q7_3,q7_4,q7_5,q7_6,q7_7,q7_8,q7_9,q7_10,q7_11,q7_12,q7_13,q7_14','rs7')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('q7_1,q7_2,q7_3,q7_4,q7_5,q7_6,q7_7,q7_8,q7_9,q7_10,q7_11,q7_12,q7_13,q7_14','rs7')">Reset</button>
+      <button class="toggle-btn" onclick="toggleModel('model7')">📋 Show answers</button>
+      <div class="res-msg" id="rs7" aria-live="polite"></div>
+      <div class="model-box" id="model7">
+        <div class="model-box-title">Correct answers in order</div>
+        <ol><li><em>fue</em> (preterite — completed event)</li><li><em>caminaba</em> (imperfect — ongoing action)</li><li><em>vi</em> (preterite — single event)</li><li><em>conocía</em> (imperfect — knew from before)</li><li><em>Llevaba</em> (imperfect — description)</li><li><em>usaba</em> (imperfect — habitual past)</li><li><em>alegré</em> (preterite — reaction)</li><li><em>Se llamaba</em> (imperfect — description)</li><li><em>era</em> (imperfect — trait)</li><li><em>hablamos</em> (preterite — completed action)</li><li><em>contó</em> (preterite — single event)</li><li><em>vivía</em> (imperfect — ongoing state)</li><li><em>se había mudado</em> (past perfect — before reference point)</li><li><em>despedimos</em> (preterite — final action)</li></ol>
+      </div>
+    </div>
+
+    <!-- Ejercicio 8: Narrative Order -->
+    <div class="card">
+      <div class="card-title">Ejercicio 8 · Marcadores Narrativos — Order the Story <span class="pill">DRAG &amp; DROP</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Drag the sentences into the correct narrative order (1–6) using the marker words as clues.</p>
+
+      <div id="sortList">
+        <div class="sort-item" data-correct="6" draggable="true"><span class="sort-handle">⠿</span><span><strong>Al final</strong>, la artista encontró la inspiración que buscaba — justo frente a ella.</span></div>
+        <div class="sort-item" data-correct="1" draggable="true"><span class="sort-handle">⠿</span><span><strong>Primero</strong>, la artista se sentó frente a un lienzo en blanco durante horas.</span></div>
+        <div class="sort-item" data-correct="3" draggable="true"><span class="sort-handle">⠿</span><span><strong>De repente</strong>, vio por la ventana un niño jugando en la lluvia.</span></div>
+        <div class="sort-item" data-correct="4" draggable="true"><span class="sort-handle">⠿</span><span><strong>En ese momento</strong>, algo cambió en su interior.</span></div>
+        <div class="sort-item" data-correct="2" draggable="true"><span class="sort-handle">⠿</span><span><strong>Luego</strong>, salió a caminar por la ciudad porque no podía concentrarse.</span></div>
+        <div class="sort-item" data-correct="5" draggable="true"><span class="sort-handle">⠿</span><span><strong>Después</strong>, volvió corriendo a su estudio y empezó a pintar sin parar.</span></div>
+      </div>
+
+      <button class="chk-btn" onclick="checkOrder()">Check Order</button>
+      <button class="rst-btn" onclick="resetOrder()">Shuffle</button>
+      <button class="toggle-btn" onclick="revealOrder()">📋 Correct Order</button>
+      <div class="res-msg" id="rs8" aria-live="polite"></div>
+    </div>
+
+    <!-- Actividad D: Free Production -->
+    <div class="card">
+      <div class="card-title">Actividad D · Producción Libre <span class="pill">FREE WRITE</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:18px;">Answer in complete sentences using OD/OI pronouns. Write directly in each box below.</p>
+
+      <div style="margin-bottom:16px;">
+        <label class="free-label">1. ¿Conoces el arte de Fernando Llort? Contesta usando un pronombre OD.</label>
+        <textarea class="vl-script" style="min-height:80px;" placeholder="Escribe tu respuesta aquí..."></textarea>
+      </div>
+      <div style="margin-bottom:16px;">
+        <label class="free-label">2. Si pudieras regalarle una obra de Llort a alguien, ¿a quién y por qué?</label>
+        <textarea class="vl-script" style="min-height:80px;" placeholder="Escribe tu respuesta aquí..."></textarea>
+      </div>
+      <div style="margin-bottom:16px;">
+        <label class="free-label">3. Imagina que visitas La Palma. ¿Qué les comprarías a tres personas importantes en tu vida?</label>
+        <textarea class="vl-script" style="min-height:80px;" placeholder="Escribe tu respuesta aquí..."></textarea>
+      </div>
+      <div>
+        <label class="free-label">4. Describe el estilo de Llort en 3 oraciones, sin repetir "arte" o "estilo" — usa pronombres OD.</label>
+        <textarea class="vl-script" style="min-height:100px;" placeholder="Escribe tu respuesta aquí..."></textarea>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VIDEO LOG ═══ -->
+  <section class="sec" id="sec-vl">
+    <h2 class="sec-title">Video Log 8 · Presentación Final</h2>
+    <p class="sec-sub">Una historia basada en una imagen · 3–4 minutos</p>
+
+    <div class="cult-card" style="background:linear-gradient(135deg,var(--plum) 0%,#5C3955 100%);">
+      <div class="label">Final VideoLog Presentation · Chapter 8</div>
+      <h3>Una historia basada en una imagen</h3>
+      <p>Choose a painting, photograph, or illustration from the Spanish-speaking world. Tell the story behind the image — what happened before, during, and after the moment captured. Narrate directly to camera using all the grammar tools from Chapter 8.</p>
+      <div class="fact-pills">
+        <span>✓ 3–4 minutes</span>
+        <span>✓ Speak to camera</span>
+        <span>✓ Imperfect + Preterite</span>
+        <span>✓ 2+ irregular verbs</span>
+        <span>✓ 2+ object pronouns</span>
+        <span>✓ Narrative markers</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Recording Checklist <span class="pill">GUÍA DE GRABACIÓN</span></div>
+      <div id="checklistItems">
+        <div class="cl-item" onclick="toggleCheck(this)"><div class="cl-box"></div><p><strong>Opening:</strong> Briefly describe the image and what it depicts using <em>ser</em> + descriptive adjectives and relative clauses.</p></div>
+        <div class="cl-item" onclick="toggleCheck(this)"><div class="cl-box"></div><p><strong>Scene-setting (imperfect):</strong> Describe what life was like, what people were doing, and what the setting looked like before the key moment.</p></div>
+        <div class="cl-item" onclick="toggleCheck(this)"><div class="cl-box"></div><p><strong>Key events (preterite):</strong> Narrate 3–4 events using the preterite, including at least 2 irregular forms. Use narrative markers.</p></div>
+        <div class="cl-item" onclick="toggleCheck(this)"><div class="cl-box"></div><p><strong>Feelings segment:</strong> Describe how the subject(s) felt using emotion vocabulary and the ser/estar contrast.</p></div>
+        <div class="cl-item" onclick="toggleCheck(this)"><div class="cl-box"></div><p><strong>Object pronouns:</strong> Use at least 2 object pronouns in your story (DOP or IOP).</p></div>
+        <div class="cl-item" onclick="toggleCheck(this)"><div class="cl-box"></div><p><strong>Closing reflection:</strong> ¿Qué significa para ti esta imagen? ¿Qué sentiste al verla?</p></div>
+        <div class="cl-item" onclick="toggleCheck(this)"><div class="cl-box"></div><p><strong>Duration &amp; delivery:</strong> 3–4 minutes total; speaking directly to camera (not reading).</p></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="step-badge">Script Draft · Escribe tu guión aquí antes de grabar</div>
+      <textarea class="vl-script" id="vl-text" style="min-height:320px;" placeholder="Apertura (Opening):
+Esta es una obra de... / Esta imagen muestra...
+Es una pintura/fotografía que...
+
+Contexto (Scene-setting — Imperfect):
+En ese tiempo, la gente...
+El lugar donde ocurría la escena...
+Los personajes llevaban / hacían...
+
+Eventos clave (Key Events — Preterite):
+Primero, ...
+De repente, ...
+Luego, ...
+Al final, ...
+
+Sentimientos (Feelings):
+El personaje estaba... / se sentía...
+Era una situación... porque...
+
+Reflexión (Closing):
+Esta imagen significa para mí...
+Cuando la vi, me sentí..."></textarea>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:8px;">
+        <span style="font-family:'Space Mono',monospace;font-size:0.82rem;color:var(--text-hint);"><strong id="word-count">0 words</strong> · <span id="char-count">0 chars</span></span>
+        <div style="display:flex;gap:8px;">
+          <button class="rst-btn" style="margin:0;" onclick="copyScript()">📋 Copy</button>
+          <button class="rst-btn" style="margin:0;color:var(--terracotta);border-color:var(--terracotta);" onclick="clearScript()">Clear</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SURREALISMO ═══ -->
+  <section class="sec" id="sec-su">
+    <h2 class="sec-title">Nota Cultural · México y el Surrealismo</h2>
+    <p class="sec-sub">Mexico and Surrealism · A homegrown avant-garde movement</p>
+
+    <div class="cult-card surr">
+      <div class="label">Nota Cultural · Capítulo 8 · Mexico</div>
+      <h3>México — Capital del Surrealismo</h3>
+      <p>Mexico became an unexpected home for Surrealism in the mid-20th century — not as a European import but as a deeply homegrown movement. Together, its artists made Mexico City a center of international avant-garde art — a tradition that continues today in galleries from La Colonia Roma to Coyoacán.</p>
+      <p>These artists refused to separate the personal from the political, the mythological from the scientific, the indigenous from the European. Their work reflects Mexico's complex identity as a meeting point of cultures, histories, and realities.</p>
+      <div class="fact-pills">
+        <span>Mid-20th century</span>
+        <span>Mexico City</span>
+        <span>La Colonia Roma</span>
+        <span>Coyoacán</span>
+        <span>International avant-garde</span>
+      </div>
+    </div>
+
+    <div class="artist-grid">
+      <div class="artist-card">
+        <div class="artist-name">Frida Kahlo</div>
+        <div class="artist-dates">México · 1907–1954</div>
+        <p>Often labeled a Surrealist — though she rejected the label — Kahlo painted intensely personal imagery rooted in Mexican folk art and her own physical experiences. Her self-portraits explore pain, identity, and the body with unflinching directness.</p>
+      </div>
+      <div class="artist-card">
+        <div class="artist-name">Remedios Varo</div>
+        <div class="artist-dates">España / México · 1908–1963</div>
+        <p>Born in Spain but exiled to Mexico, Varo created dreamlike paintings blending science, spirituality, and feminism. Her meticulous technique and otherworldly settings — towers, laboratories, forests — set her apart as one of Surrealism's most original voices.</p>
+      </div>
+      <div class="artist-card">
+        <div class="artist-name">Leonora Carrington</div>
+        <div class="artist-dates">Reino Unido / México · 1917–2011</div>
+        <p>British-born, Carrington spent most of her life in Mexico City, weaving Celtic mythology and Latin American culture into her Surrealist canvases. Her work is filled with animals, witches, and ritual — deeply mysterious and richly symbolic.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Reflexión · ¿Y tu Video Log? <span class="pill">CONEXIÓN</span></div>
+      <p style="font-size:0.95rem;color:var(--text);line-height:1.7;margin-bottom:10px;">Any of these three artists could be the basis for your Video Log 8 painting. Their works tell rich, layered stories — exactly what the assignment calls for.</p>
+      <p style="font-size:0.88rem;color:var(--text-hint);font-style:italic;">Think about: What is happening in the painting? What happened before? What might happen next? How does the painter feel — and how do you feel as the viewer? Use all four grammar structures from Chapter 8 in your narration.</p>
+    </div>
+  </section>
+
+  <div class="footer">
+    SPSCC · Spanish 122 · Capítulo 8.2 · Semana 9 · Built for in-class &amp; self-study practice
+  </div>
+
+</div><!-- /app -->
+
+<script>
+/* ── Tab switching ── */
+function switchTab(tab, el){
+  document.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('.sec').forEach(function(s){ s.classList.remove('active'); });
+  if(el) el.classList.add('active');
+  var s = document.getElementById('sec-'+tab);
+  if(s) s.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ── Normalize for comparison ── */
+function normalize(s){
+  if(!s) return '';
+  return s.toString().trim().toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/\s+/g,' ');
+}
+
+/* ── Check blanks ── */
+function checkBlanks(idsCSV, resultId){
+  var ids = idsCSV.split(',');
+  var correct = 0, total = ids.length;
+  ids.forEach(function(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    var user = normalize(el.value);
+    // allow pipe-separated alternatives in data-answer
+    var answers = el.getAttribute('data-answer').split('|').map(normalize);
+    el.classList.remove('ok','ng');
+    if(answers.indexOf(user) !== -1){
+      el.classList.add('ok'); correct++;
+    } else {
+      el.classList.add('ng');
+    }
+  });
+  var msg = document.getElementById(resultId);
+  if(msg){
+    if(correct === total){
+      msg.textContent = '¡Perfecto! ' + correct + ' / ' + total + ' correctas. ✓';
+      msg.className = 'res-msg ok';
+      markDone(resultId);
+    } else {
+      msg.textContent = correct + ' / ' + total + ' correctas. Revisa las marcadas en rojo.';
+      msg.className = 'res-msg ng';
+    }
+  }
+}
+
+function resetBlanks(idsCSV, resultId){
+  idsCSV.split(',').forEach(function(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    el.value = ''; el.classList.remove('ok','ng');
+  });
+  var msg = document.getElementById(resultId);
+  if(msg){ msg.textContent = ''; msg.className = 'res-msg'; }
+}
+
+function toggleModel(id){
+  var box = document.getElementById(id);
+  if(box) box.classList.toggle('show');
+}
+
+/* ── Drag sort (Ejercicio 8) ── */
+var sortList = document.getElementById('sortList');
+var dragItem = null;
+if(sortList){
+  sortList.querySelectorAll('.sort-item').forEach(function(item){
+    item.addEventListener('dragstart', function(){ dragItem = item; item.style.opacity = '.4'; });
+    item.addEventListener('dragend', function(){ dragItem = null; item.style.opacity = '1'; });
+    item.addEventListener('dragover', function(e){
+      e.preventDefault();
+      var rect = item.getBoundingClientRect();
+      if(e.clientY < rect.top + rect.height/2) sortList.insertBefore(dragItem, item);
+      else sortList.insertBefore(dragItem, item.nextSibling);
+    });
+  });
+}
+
+function checkOrder(){
+  var items = Array.from(sortList.querySelectorAll('.sort-item'));
+  var correct = 0;
+  items.forEach(function(item, i){
+    item.classList.remove('sort-ok','sort-ng');
+    if(parseInt(item.getAttribute('data-correct')) === i+1){ item.classList.add('sort-ok'); correct++; }
+    else { item.classList.add('sort-ng'); }
+  });
+  var msg = document.getElementById('rs8');
+  if(correct === 6){ msg.textContent = '¡Perfecto! Correct narrative order. ✓'; msg.className = 'res-msg ok'; markDone('rs8'); }
+  else { msg.textContent = correct + '/6 in correct position — drag to rearrange and try again.'; msg.className = 'res-msg ng'; }
+}
+
+function resetOrder(){
+  var items = Array.from(sortList.querySelectorAll('.sort-item'));
+  items.sort(function(){ return Math.random()-.5; });
+  items.forEach(function(item){ item.classList.remove('sort-ok','sort-ng'); sortList.appendChild(item); });
+  var msg = document.getElementById('rs8');
+  msg.textContent = ''; msg.className = 'res-msg';
+}
+
+function revealOrder(){
+  var items = Array.from(sortList.querySelectorAll('.sort-item'));
+  items.sort(function(a,b){ return parseInt(a.getAttribute('data-correct')) - parseInt(b.getAttribute('data-correct')); });
+  items.forEach(function(item){ item.classList.add('sort-ok'); item.classList.remove('sort-ng'); sortList.appendChild(item); });
+  var msg = document.getElementById('rs8');
+  msg.textContent = 'Correct order revealed: Primero → Luego → De repente → En ese momento → Después → Al final';
+  msg.className = 'res-msg ok';
+}
+
+/* ── Clickable checklist ── */
+function toggleCheck(el){ el.classList.toggle('checked'); }
+
+/* ── Script textarea ── */
+function updateWC(){
+  var el = document.getElementById('vl-text'); if(!el) return;
+  var t = el.value;
+  var words = t.trim() ? t.trim().split(/\s+/).length : 0;
+  var wc = document.getElementById('word-count');
+  var cc = document.getElementById('char-count');
+  if(wc) wc.textContent = words + (words===1?' word':' words');
+  if(cc) cc.textContent = t.length + ' chars';
+}
+
+function copyScript(){
+  var el = document.getElementById('vl-text'); if(!el) return;
+  navigator.clipboard.writeText(el.value).catch(function(){ el.select(); document.execCommand('copy'); });
+}
+
+function clearScript(){
+  if(!confirm('Clear your script? This cannot be undone.')) return;
+  var el = document.getElementById('vl-text'); if(el){ el.value = ''; updateWC(); }
+}
+
+/* ── Progress bar ── */
+var done = new Set(), totalGoals = 4;
+function markDone(id){
+  done.add(id);
+  var pct = Math.min(100, Math.round(done.size/totalGoals*100));
+  var pf = document.getElementById('pf'); if(pf) pf.style.width = pct+'%';
+}
+
+/* ── Init ── */
+document.addEventListener('DOMContentLoaded', function(){
+  var vl = document.getElementById('vl-text');
+  if(vl) vl.addEventListener('input', updateWC);
+  updateWC();
+});
+</script>
+</body>
+</html>
